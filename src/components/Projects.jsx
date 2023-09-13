@@ -1,10 +1,10 @@
 import ProjectSegment from './ProjectSegment';
 
-function Projects() {
+function Projects({ isEnglish }) {
   return (
     <section className="projects-section">
-      <ProjectSegment title="VANILLA JS" type="vanilla" />
-      <ProjectSegment title="REACT" type="react" />
+      <ProjectSegment isEnglish={isEnglish} title="VANILLA JS" type="vanilla" />
+      <ProjectSegment isEnglish={isEnglish} title="REACT" type="react" />
     </section>
   );
 }

@@ -1,19 +1,23 @@
 import { Link, animateScroll as scroll } from 'react-scroll';
+import { MdLanguage } from 'react-icons/md';
 
-function Nav() {
+function Nav({ setIsEnglish, isEnglish }) {
   return (
     <nav>
       <div className="logo">
-        <h2>myLogo</h2>
+        <MdLanguage onClick={() => setIsEnglish((prev) => !prev)} className="langLogo" />
+        <button onClick={() => setIsEnglish((prev) => !prev)} className="langBtn">
+          {isEnglish ? 'english' : 'русский'}
+        </button>
       </div>
       <ul className="nav-links">
         <li>
           <Link className="nav-link" offset={-140} to="projects" smooth={true} duration={1000}>
-            projects
+            {isEnglish ? 'projects' : 'проекты'}
           </Link>
         </li>
         <Link className="nav-link" offset={-70} to="bio" smooth={true} duration={1200}>
-          <li>bio</li>
+          {isEnglish ? 'bio' : 'о себе'}
         </Link>
       </ul>
     </nav>

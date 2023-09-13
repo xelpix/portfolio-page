@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 :root {
-  font-family: 'Poppins', system-ui, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', system-ui, Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -48,6 +50,27 @@ nav {
   align-items: center;
   padding: 14px 10px;
   border-bottom: 2px solid rgba(232, 236, 247, 0.445);
+
+  .logo {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .langBtn {
+    padding: 4px 6px;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+  }
+
+  .langLogo {
+    font-size: 30px;
+    cursor: pointer;
+  }
 
   ul {
     display: flex;
@@ -99,7 +122,7 @@ header {
   .tools-header-text {
     font-size: 34px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 
     @media (max-width: 625px) {
       font-size: 24px;
@@ -110,75 +133,25 @@ header {
     }
   }
 
+  .tools {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
   .more {
-    font-size: 15px;
+    font-size: 20px;
     white-space: nowrap;
     text-align: right;
   }
 
-  .tools-text {
-    font-size: 50px;
-
-    @media (max-width: 625px) {
-      font-size: 45px;
-    }
-
-    @media (max-width: 560px) {
-      font-size: 40px;
-    }
-
-    @media (max-width: 490px) {
-      font-size: 35px;
-    }
-
-    @media (max-width: 430px) {
-      font-size: 30px;
-    }
-
-    @media (max-width: 384px) {
-      font-size: 25px;
-    }
-  }
-
   .tool {
-    padding: 0 4px 0px 10px;
-    line-height: 1.55;
-  }
-
-  // EACH TOOL:
-  .HTML {
-    background-color: #e44d26;
-    color: #ebebeb;
-  }
-
-  .JAVASCRIPT {
-    background-color: #f7df1e;
-    color: black;
-  }
-
-  .REACT {
-    background-color: #00d8ff;
-    color: #222222;
-  }
-
-  .REDUX {
-    background-color: #fff;
-    color: #764abc;
-  }
-
-  .TYPESCRIPT {
-    background-color: #007acc;
-    color: #ffffff;
-  }
-
-  .BOOTSTRAP {
-    background-color: #7c12fa;
-    color: #f8fbfc;
+    padding: 2px;
+    font-size: 70px;
   }
 }
 
 // PROJECTS:
-
 .projects-section {
   .project-segment-wrapper {
     margin-bottom: 80px;

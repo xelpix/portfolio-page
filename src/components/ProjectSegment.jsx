@@ -1,14 +1,16 @@
 import { projects } from '../data';
 
-function ProjectSegment({ title, type }) {
+function ProjectSegment({ title, type, isEnglish }) {
   const reactProjects = projects.filter((project) => {
     return project.type === type;
   });
 
+  const titleLang = isEnglish ? 'PROJECTS' : 'ПРОЕКТЫ';
+
   return (
     <div className="project-segment-wrapper">
       <h2 className="projects-section-title">
-        <span className={`${type}-highlight`}>{title}</span> PROJECTS
+        <span className={`${type}-highlight`}>{title}</span> {titleLang}
       </h2>
       <div className="projects-section-wrapper">
         {reactProjects.map((project, id) => {
