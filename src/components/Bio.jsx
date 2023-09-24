@@ -1,4 +1,4 @@
-import avatar from '../assets/img/avatar.jpg';
+import avatarka from '../assets/img/avatarka.jpg';
 
 function Bio({ isEnglish }) {
   const bioHeader = isEnglish ? (
@@ -18,7 +18,7 @@ function Bio({ isEnglish }) {
   return (
     <section className="bio-section">
       <div className="bio-content-wrapper">
-        <img className="profile-img" src={avatar} alt="" />
+        <img className="profile-img" src={avatarka} alt="" />
         <div className="bio-profile-about">
           {bioHeader}
           <p>{bioText}</p>

@@ -3,6 +3,9 @@ import rps from './assets/img/rps.jpg';
 import product from './assets/img/the-product.jpg';
 import steppi from './assets/img/steppi.jpg';
 import ag from './assets/img/ag-store.jpg';
+import articlejump from './assets/img/article-jump.jpg';
+import movierun from './assets/img/movie-run.jpg';
+import quizzical from './assets/img/quizzical.jpg';
 
 import { FaGithub, FaTelegramPlane } from 'react-icons/fa';
 
@@ -42,6 +45,30 @@ export const projects = [
     demoLink: 'https://imaginative-tulumba-e4c7e3.netlify.app/',
     githubLink: 'https://github.com/xelpix/ancient-gamer-store',
     type: 'react',
+  },
+
+  {
+    title: 'Article-jump',
+    projectImage: articlejump,
+    demoLink: 'https://willowy-elf-7d907c.netlify.app/',
+    githubLink: 'https://github.com/xelpix/article-jump',
+    type: 'typescript',
+  },
+
+  {
+    title: 'Movierun',
+    projectImage: movierun,
+    demoLink: 'https://movie-run.netlify.app/',
+    githubLink: 'https://github.com/xelpix/movierun',
+    type: 'typescript',
+  },
+
+  {
+    title: 'Quizzical',
+    projectImage: quizzical,
+    demoLink: 'https://peaceful-meerkat-ce9d42.netlify.app/',
+    githubLink: 'https://github.com/xelpix/quizzical',
+    type: 'typescript',
   },
 ];
 
