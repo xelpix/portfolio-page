@@ -5,12 +5,13 @@ function ProjectSegment({ title, type, isEnglish }) {
     return project.type === type;
   });
 
-  const titleLang = isEnglish ? 'PROJECTS' : 'ПРОЕКТЫ';
+  const titleText = isEnglish ? 'PROJECTS' : 'ПРОЕКТЫ';
+  const viewText = isEnglish ? 'view' : 'показать';
 
   return (
     <div className="project-segment-wrapper">
       <h2 className="projects-section-title">
-        <span className={`${type}-highlight`}>{title}</span> {titleLang}
+        <span className={`${type}-highlight`}>{title}</span> {titleText}
       </h2>
       <div className="projects-section-wrapper">
         {reactProjects.map((project, id) => {
@@ -23,7 +24,7 @@ function ProjectSegment({ title, type, isEnglish }) {
                 </div>
               </a>
               <p className="single-project-view">
-                view {` `}
+                {viewText} {` `}
                 <a href={project.demoLink} target="_blank" className="single-project-link">
                   demo
                 </a>
