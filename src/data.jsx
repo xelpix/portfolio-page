@@ -50,7 +50,7 @@ export const projects = [
   {
     title: 'Article-jump',
     projectImage: articlejump,
-    demoLink: 'https://willowy-elf-7d907c.netlify.app/',
+    demoLink: 'https://articlejump.netlify.app/',
     githubLink: 'https://github.com/xelpix/article-jump',
     type: 'typescript',
   },
